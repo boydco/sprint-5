@@ -6,35 +6,41 @@
     <meta charset="utf-8">
     <title>HTML5 Contact Form</title>
     <link rel="stylesheet" media="screen" href="styles.css" >
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
 </head>
 <body>
   <form class="contact_form" action="#" method="post" name="contact_form">
     <ul>
       <li>
-        <h2>Contact Us</h2>
+        <h2>Get in touch with us!</h2>
         <span class="required_notification">* Denotes Required Fiels</span>
       </li>
       <li>
-        <label for="id">Name:</label>
+        <label for="id">My name is:</label>
         <input type="text" id="id" name="textfield" placeholder="John Doe" required >
       </li>
       <li>
-        <label for="email">Email:</label>
+        <label for="email">My email is:</label>
         <input type="email" id="email" name="emailAddress" placeholder="johndoe@example.com" required >
         <span class="form_hint">Proper format "name@something.com" </span>
       </li>
       <li>
-        <label for="website">Website:</label>
-        <input type="url" id="website" name="websiteAddress" placeholder="http://johndoe.com/" required pattern="(http|https)://.+" >
+        <label for="website">My website URL is:</label>
+        <input type="url" id="website" name="websiteAddress" placeholder="http://johndoe.com/" pattern="(http|https)://.+" >
         <span class="form_hint">Proper format "http://www.something.com" </span>
       </li>
       <li>
-        <label for="message">Message:</label>
+        <label for="message">Tell us what's on your mind:</label>
         <textarea name="message" id="message" cols="40" rows="6" required ></textarea>
       </li>
       <li>
-        <button class="submit" type="submit">Submit Form</button>
+        <button class="submit" type="submit">Send Message</button>
+        <button class="reset" type="reset">Reset</button>
       </li>
+
     </ul>
   </form>
 </body>
