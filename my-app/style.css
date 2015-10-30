@@ -1,0 +1,23 @@
+.jumbotron {
+  height: 220px;
+  background-image: url(img/nyc.jpg);
+  background-size: cover;
+}
+
+.btn btn-success {
+  align-content: center;
+}
+
+
+.form-inline .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#favCity {
+  margin: 10px 0 20px;
+}
+
+#button {
+  margin-top: 15px;
+}
